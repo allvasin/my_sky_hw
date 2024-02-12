@@ -5,8 +5,7 @@
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-inline: max(50% - 600px, 16px);
 }
 
 a {
@@ -21,6 +20,7 @@ a {
   background-size: cover;
 
   &__title {
+    max-width: 700px;
     color: #FFF;
     font-size: 64px;
     font-weight: 700;
@@ -29,7 +29,7 @@ a {
   }
 
   &__text {
-    width: 481px;
+    max-width: 481px;
     color: #FFF;
     font-size: 18px;
     font-weight: 300;
@@ -42,17 +42,15 @@ a {
   }
 
   &__button {
-    width: 234px;
+    max-width: 234px;
+    width: 100%;
     height: 49px;
     border: 1px solid #9C0332;
     background: #9C0332;
     border-radius: 30px;
     box-sizing: border-box;
-
     font-size: 18px;
-    padding: 13px 74px;
     color: #FFF;
-    text-align: center;
     outline: none;
   }
 
@@ -60,7 +58,8 @@ a {
 
 
 .games {
-  min-height: 556px;
+  padding-block: 128px;
+  box-sizing: border-box;
   background: #000915;
 
   &__title {
@@ -68,15 +67,24 @@ a {
   }
 
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
   }
 
   &__card {
-    height: 300px;
-    width: 379px;
+    max-width: 378px;
+    width: 100%;
+    aspect-ratio: 378/300;
     border-radius: 16px;
     gap: 32px;
+    display: flex;
+    align-items: flex-end;
+    padding: 32px;
+    box-sizing: border-box;
+
+
   }
 
   &__card1 {
@@ -84,7 +92,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    grid-column: span 4;
 
   }
 
@@ -93,7 +100,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    grid-column: span 4;
   }
 
   &__card3 {
@@ -101,7 +107,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    grid-column: span 4;
   }
 
   &__text {
