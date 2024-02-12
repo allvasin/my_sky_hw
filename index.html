@@ -1,24 +1,44 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@600&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="top">
-            <h1>Добро пожаловать <br>на мой сайт !</h1>
-            <link rel="stylesheet" href="#">
-            <button>
-                Поехали!
-            </button>
-        </div>
+  <div class="top center">
+    <header class="top__header">
+      <h1 class="top__title">Добро пожаловать <br> на мой сайт !</h1>
+      <p class="top__text">Вам предстоит пройти несколько увлекательных игр.
+        Если готов нажимай <span class="top__text--big">поехали</span>
+        и <span class="top__text--big">приступай</span> </p>
+      <a class="top__button" href="#games">Поехали!</a>
     </header>
-    <main></main>
-    <footer></footer>
-    
+  </div>
+
+  <section class="games center">
+    <h2 class="games__title">Игры</h2>
+    <div class="games__cards">
+      <a class="games__card games__card1" href="#">
+        <h3 class="games__text">Игра 1</h3>
+      </a>
+      <a class="games__card games__card2" href="#">
+        <h3 class="games__text">Игра 2</h3>
+      </a>
+      <a class="games__card games__card3" href="#">
+        <h3 class="games__text">Игра 1</h3>
+      </a>
+    </div>
+
+  </section>
+
 </body>
+
 </html>
