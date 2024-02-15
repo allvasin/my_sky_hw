@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+
+
+    .top {
+        &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+
+}
