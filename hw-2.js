@@ -1,4 +1,3 @@
-/*
 // Задание 1
 let a = 10;
 alert (a);
@@ -44,7 +43,7 @@ alert(num);
 
 // Задание 8
 let age = prompt("Сколько вам лет?")
-alert(age);*/
+alert(age);
 
 // Задание 9.0
 let user = {
@@ -60,16 +59,12 @@ let user = {
  user.age = 18;
 
  // Задание 9.3
- //delete user ['city of residence'];
+ delete user ['city of residence'];
 
- // Задание 9.4
+// Задание 9.4
 let info = prompt("Что вы хотите узнать о пользователе?", "name", "age", "isAdmin");
-// let info = prompt("Что вы хотите узнать о пользователе?", "city of residence");
+alert(user[info]);
 
- alert(user[info]);
-
- 
-/*
  // Задание 10
  let name = prompt('Как вас зовут?')
  alert(`Привет,  ${name}!`)*/
