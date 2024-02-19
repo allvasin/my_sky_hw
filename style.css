@@ -98,4 +98,26 @@ a {
   font-size: 24px;
   line-height: 133%;
   color: #fff;
+}
+
+.game-blok {
+  box-sizing: border-box;
+  background: #000915;
+}
+
+@media (max-width: 767px) {
+  .top__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

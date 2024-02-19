@@ -84,6 +84,8 @@ a {
     padding: 32px;
     box-sizing: border-box;
 
+    
+
 
   }
 
@@ -117,3 +119,10 @@ a {
   }
 
 }
+
+.game-blok {
+  box-sizing: border-box;
+  background: #000915;
+}
+
+@import 'mobile';
