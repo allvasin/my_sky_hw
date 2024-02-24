@@ -12,33 +12,11 @@ a {
   text-decoration: none;
 }
 
-.top {
-  height: 1024px;
-  background-image: url(./img/top.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+body {
+  background: #000915;
 }
-.top__title {
-  max-width: 700px;
-  color: #FFF;
-  font-size: 64px;
-  font-weight: 700;
-  padding-top: 217px;
-  padding-bottom: 32px;
-}
-.top__text {
-  max-width: 481px;
-  color: #FFF;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 32px;
-  margin-bottom: 44px;
-}
-.top__text--big {
-  font-weight: 800;
-}
-.top__button {
+
+.button {
   max-width: 234px;
   width: 100%;
   height: 49px;
@@ -49,6 +27,10 @@ a {
   font-size: 18px;
   color: #FFF;
   outline: none;
+}
+.button:hover {
+  transition: all 0.3s;
+  background: pink;
 }
 
 .games {
@@ -75,19 +57,19 @@ a {
   padding: 32px;
   box-sizing: border-box;
 }
-.games__card1 {
+.games__card--1 {
   background-image: url(./img/game1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.games__card2 {
+.games__card--2 {
   background-image: url(./img/game2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.games__card3 {
+.games__card--3 {
   background-image: url(./img/game3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -100,9 +82,44 @@ a {
   color: #fff;
 }
 
-.game-blok {
-  box-sizing: border-box;
-  background: #000915;
+.game-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 135px;
+  flex-wrap: wrap;
+}
+
+.game__img {
+  max-width: 485px;
+  width: 100%;
+  aspect-ratio: 485/333;
+}
+
+.top {
+  height: 1024px;
+  background-image: url(./img/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__title {
+  max-width: 700px;
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+  padding-top: 217px;
+  padding-bottom: 32px;
+}
+.top__text {
+  max-width: 481px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 44px;
+}
+.top__text--big {
+  font-weight: 800;
 }
 
 @media (max-width: 767px) {
