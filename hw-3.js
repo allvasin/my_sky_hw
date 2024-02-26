@@ -5,7 +5,7 @@ if (key === password) {alert('Пароль введен верно')}
 else {alert("Пароль введен неправильно")}
 
 // Задание 2
-0, 10, −3, 2
+// var 0, 10, −3, 2
 let c = 2;
 if ((c > 0) && (c < 10)) {alert("Верно")}
 else {alert("Неверно")}
@@ -42,7 +42,6 @@ switch (monthNumber) {
         break;
     default:
         console.log('Вы ввели что-то не то');
-
 }
 
 // Задание 7
