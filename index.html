@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -14,37 +14,46 @@
 
 <body>
   <div class="top center">
-    <header class="top__header">
-      <h1 class="top__title">Добро пожаловать на мой сайт!</h1>
+    <header class="top__header ">
+      <h1 class="top__title ">Добро пожаловать на мой сайт!</h1>
       <p class="top__text">Вам предстоит пройти несколько увлекательных игр.
         Если готов нажимай <span class="top__text--big">поехали</span>
         и <span class="top__text--big">приступай</span>.</p>
-      <button class="top__button" href="#games">Поехали!</button>
+      <button class="button top__button" href="#games">Поехали!</button>
     </header>
   </div>
 
-  <section class="games center">
-    <h2 class="games__title">Игры</h2>
-    <div class="games__cards">
-      <a class="games__card games__card1" href="#">
-        <h3 class="games__text">Игра 1</h3>
-      </a>
-      <a class="games__card games__card2" href="#">
-        <h3 class="games__text">Игра 2</h3>
-      </a>
-      <a class="games__card games__card3" href="#">
-        <h3 class="games__text">Игра 3</h3>
-      </a>
+  <main class="center">
+    <section class="games">
+      <h2 class="games__title">Игры</h2>
+      <div class="games__cards">
+        <a class="games__card games__card--1" href="#">
+          <h3 class="games__text">Игра 1</h3>
+        </a>
+        <a class="games__card games__card--2" href="#">
+          <h3 class="games__text">Игра 2</h3>
+        </a>
+        <a class="games__card games__card--3" href="#">
+          <h3 class="games__text">Игра 3</h3>
+        </a>
+      </div>
+    </section>
+
+
+    <div class="game-block game-block--season">
+      <div>
+        <h2 class="top__title">Времена года</h2>
+        <h3 class="top__text"> Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится
+          — и Вы узнаете, к какому времени года он относится.</h3>
+        <button class="button blok__button" href="#games">Играть!</button>
+      </div>
+      <div>
+        <img class="game__img"    src="./img/video_game1.svg" alt="game1">
+      </div>
+
     </div>
-  </section>
 
-  <section >
-    <div class="game block">
-      <h2 class="block__title">Времена года</h2>
-    </div>
-  </section>
-
-
+  </main>
 </body>
 
 </html>
