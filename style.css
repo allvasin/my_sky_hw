@@ -137,4 +137,10 @@ body {
     line-height: 22px;
     text-align: center;
   }
+  .game-block {
+    align-items: center;
+  }
+  .blok __button {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
