@@ -1,10 +1,7 @@
 function seasonYear() {
 
     let monthNumber = prompt('Введите номер месяца');
-    console.log(monthNumber);
-    monthNumber = Number(monthNumber);
-    console.log(monthNumber);
-
+   
     switch (monthNumber) {
         case '12':
         case '1':

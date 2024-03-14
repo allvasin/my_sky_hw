@@ -94,9 +94,10 @@ body {
 
 .game-block {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
   gap: 135px;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 }
 
 .game__img {
@@ -119,6 +120,9 @@ body {
     font-weight: 700;
     padding-top: 217px;
     padding-bottom: 32px;
+    &--padding{
+      padding-top: 0;
+    }
   }
 
   &__text {
