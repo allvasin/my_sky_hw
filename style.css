@@ -84,9 +84,9 @@ body {
 
 .game-block {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
   gap: 135px;
-  flex-wrap: wrap;
 }
 
 .game__img {
@@ -109,6 +109,9 @@ body {
   font-weight: 700;
   padding-top: 217px;
   padding-bottom: 32px;
+}
+.top__title--padding {
+  padding-top: 0;
 }
 .top__text {
   max-width: 481px;
@@ -136,5 +139,16 @@ body {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+  }
+  .game-block {
+    flex-direction: column;
+  }
+  .game-block__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blok__button {
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -20,4 +20,22 @@
         }
     }
 
+    .game-block {
+        
+        flex-direction: column;
+        
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+    }
+
+    .blok__button {
+        margin: 0 auto;
+    }
+
 }
