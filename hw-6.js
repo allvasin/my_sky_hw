@@ -41,12 +41,34 @@
 // console.log(arr2);
 
 // Задание 7
+// let myArr = [9, 8, 7, 6, 5];
 
+// let yourNumber = prompt('Введите число');
+// yourNumber = Number(yourNumber);
 
-
-
+// if (!isNaN(yourNumber) && myArr.includes(yourNumber)) {
+//     alert('Угадал!')
+// }
+// else{
+//     alert('Не угадал!')
+// }
 
 // Задание 8
+// let str = 'abcdef';
+// console.log(str.split('').reverse().join(''));
+
+// Задание 9
+// const arr3 = [[1, 2, 3],[4, 5, 6]];
+// console.log(arr3.flat());
+
+// Задание 10
+let arrayNumbers = [3, 5, 7, 1, 2, 4, 9, 10, 6, 8];
+for (let i = 0; i < arrayNumbers.length - 1; i ++){
+    console.log(arrayNumbers[i] + arrayNumbers[i + 1]);
+}
+
+// Задание 11
+
 
 
 
