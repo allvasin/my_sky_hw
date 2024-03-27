@@ -1,4 +1,4 @@
-let numbers = [1, 5, 4, 10, 0, 3];
+ let numbers = [1, 5, 4, 10, 0, 3];
 
 // Задание 1
 for (let i = 0; i <= numbers.length; i ++) {
@@ -14,7 +14,6 @@ console.log(numbers.indexOf(4));
 // Задание 3
 const arr = [1, 3, 5, 10, 20];
 console.log(arr.join(' '));
-console.log(arr.join(''));
 
 // Задание 4
 let newArray = [];
@@ -77,13 +76,14 @@ function arrPawTwo(arr) {
 
     console.log(res);
 }
-
 //arrPawTwo(arr);
 
 // Задание 12
+let  arr = ['123', 'gdfs', 'hgs', 'yyyyy'];
 function getStrArr(array){
-   return array.map(el => el.lenght); 
+   return array.map(el => el.length); 
 }
+ console.log(getStrArr(arr));
 
 // Задание 13
 //let arr4 = [3, 5, -7, 1, 2, -4, 9, -10, 6, -8]
