@@ -23,3 +23,33 @@ function seasonYear() {
             alert('Вы ввели что-то не то');
     }
 }
+
+function guessWord() {
+    //Создаем и сортируем массив
+    let arrayWords = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];  
+     arrayWords = arrayWords.sort(() => Math.random() - 0.5);    
+     alert(arrayWords);
+
+     let firstWord = prompt('Какое было первое слово?');
+     let lastWord = prompt('Какое было последнее слово?');
+
+     if (firstWord && lastWord) {
+        if ((firstWord.toLowerCase() === arrayWords[0].toLowerCase()) && 
+        (lastWord.toLowerCase() === arrayWords[arrayWords.length - 1].toLowerCase())) {
+           alert('Супер! Угаданы оба слова!');
+        }
+   
+       else if ((firstWord.toLowerCase() === arrayWords[0].toLowerCase()) ||
+       (lastWord.toLowerCase() === arrayWords[arrayWords.length - 1].toLowerCase())) {
+          alert('Только одно правильно!');
+       }
+   
+       else {
+           alert('Увы! Ни одно слово не верно!');
+        }
+     }
+     else {
+        alert('Вы не ввели одно или оба слова')
+     }
+}
+
