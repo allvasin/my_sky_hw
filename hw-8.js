@@ -1,4 +1,6 @@
 // Задание 1
+//С помощью метода массива sort отсортируйте массив people
+// возрастанию возраста и выведите результат в консоль.
 const people1 = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
@@ -10,6 +12,10 @@ let newMassive = people1.sort((a, b) =>  a.age - b.age);
 console.log(newMassive);
 
 // Задание 2
+//Реализуйте функцию filter, кот должна принимать массив
+// и функцию-правило (которое возвращает true или false для каждого элемента),
+// а возвращать — новый массив, который содержит только те элементы, для которых функция-правило  
+// возвращает true
 function isPositive(element) {
   return element > 0;
 }
@@ -53,9 +59,27 @@ setTimeout(() => {
 
 // Задание 4
 function delayForSecond(callback) {
-    setTimeout(callback(), 1000);
+  setTimeout(() => callback(), 1000);
 }
 
 delayForSecond(function () {
-   console.log('Привет, Глеб!');
+  console.log('Привет, Глеб!');
 })
+
+// Задание 5
+// Функция delayForSecond через 1 секунду пишет в консоль 
+// «Прошла одна секунда», а затем вызывает переданный колбэк
+
+function delayForSecond(cb) {
+  setTimeout(() => {
+      console.log('Прошла одна секунда');
+      if(cb) {  cb(); }
+  }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+  console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => (sayHi('Глеб')));
